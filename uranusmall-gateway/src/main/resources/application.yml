@@ -1,0 +1,35 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: uranusmall-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 124.221.81.62:8848
+        namespace: 2a04e733-6abe-486f-96c5-04ac151f49de
+
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      enabled: true
+      routes:
+      - id: uranusmall-member
+        uri: lb://uranusmall-member
+        predicates:
+        - Path=/member/**,/sso/**
+      - id: uranusmall-coupons
+        uri: lb://uranusmall-coupons
+        predicates:
+        - Path=/coupon/**
+      - id: uranusmall-auth
+        uri: lb://uranusmall-auth
+        predicates:
+        - Path=/oauth/**
+
+uranus:
+  gateway:
+    shouldSkipUrls:
+    - /oauth/**
+    - /sso/**
