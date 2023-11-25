@@ -1,0 +1,15 @@
+elasticsearch:
+  host: es-gzxjce80.public.tencentelasticsearch.com
+  port: 9200
+  username: elastic
+  password: lkkshiwo123?
+  scheme: https
+  rest:
+    # uris: 192.168.21.130:9300,192.168.21.131:9300,192.168.21.132:9300
+    uris: https://es-gzxjce80.public.tencentelasticsearch.com:9200
+
+spring:
+  data:
+    elasticsearch:
+      cluster-nodes: https://es-gzxjce80.public.tencentelasticsearch.com:9200
+      cluster-name: es-gzxjce80
