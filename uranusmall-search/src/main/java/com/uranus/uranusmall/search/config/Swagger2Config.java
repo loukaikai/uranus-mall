@@ -24,7 +24,7 @@ public class Swagger2Config {
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.uranus.uranusmall.search.controller"))
                 .paths(PathSelectors.any())
-                .build();
+                .build().host("http://127.0.0.1:8085/swagger-ui.html");
     }
 
     private ApiInfo apiInfo() {
