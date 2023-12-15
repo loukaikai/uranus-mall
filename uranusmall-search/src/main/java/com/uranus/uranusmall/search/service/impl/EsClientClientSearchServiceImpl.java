@@ -1,7 +1,6 @@
 package com.uranus.uranusmall.search.service.impl;
 
 import com.alibaba.fastjson.JSON;
-import com.uranus.uranusmall.search.repository.EsProductRepository;
 import com.uranus.uranusmall.search.service.EsClientSearchService;
 import org.elasticsearch.action.admin.indices.delete.DeleteIndexRequest;
 import org.elasticsearch.action.bulk.BulkRequest;

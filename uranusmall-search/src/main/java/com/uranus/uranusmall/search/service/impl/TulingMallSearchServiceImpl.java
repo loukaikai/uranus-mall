@@ -6,7 +6,6 @@ import com.uranus.uranusmall.search.service.TulingMallSearchService;
 import com.uranus.uranusmall.search.utils.SearchConstant;
 import com.uranus.uranusmall.search.vo.ESRequestParam;
 import com.uranus.uranusmall.search.vo.ESResponseResult;
-import org.apache.lucene.search.SortField;
 import org.apache.lucene.search.join.ScoreMode;
 import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchResponse;
@@ -31,7 +30,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
-import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
 

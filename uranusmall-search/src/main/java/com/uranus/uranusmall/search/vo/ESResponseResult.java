@@ -6,7 +6,6 @@ import com.uranus.uranusmall.search.domain.EsProduct;
 
 import java.util.List;
 import java.util.Objects;
-import java.util.Set;
 
 /**
  * @author: baiqi

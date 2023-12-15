@@ -1,8 +1,5 @@
 package com.uranus.uranusmall.search.service;
 
-import com.uranus.uranusmall.search.vo.ESRequestParam;
-import com.uranus.uranusmall.search.vo.ESResponseResult;
-
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;

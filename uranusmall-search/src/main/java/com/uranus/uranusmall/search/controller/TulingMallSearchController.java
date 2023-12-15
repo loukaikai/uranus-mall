@@ -5,11 +5,9 @@ package com.uranus.uranusmall.search.controller;
 */
 
 import com.uranus.uranusmall.common.api.CommonResult;
-import com.uranus.uranusmall.search.service.EsClientSearchService;
 import com.uranus.uranusmall.search.service.TulingMallSearchService;
 import com.uranus.uranusmall.search.vo.ESRequestParam;
 import com.uranus.uranusmall.search.vo.ESResponseResult;
-import org.elasticsearch.search.SearchService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
