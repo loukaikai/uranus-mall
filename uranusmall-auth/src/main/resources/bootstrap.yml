@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: uranusmall-auth
+
+  cloud:
+    nacos:
+      server-addr: 124.221.81.62:8848
+      username: nacos
+      password: socan
+      discovery:
+        server-addr: ${spring.cloud.nacos.server-addr}
+        group: uranusmall-dev
+        namespace: uranus
+      config:
+        server-addr: ${spring.cloud.nacos.server-addr}
+        file-extension: yml
+        encode: UTF-8
+        group: uranusmall-dev
+        namespace: uranus

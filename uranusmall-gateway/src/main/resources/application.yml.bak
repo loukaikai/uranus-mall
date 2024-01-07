@@ -18,6 +18,7 @@ spring:
       - id: uranusmall-member
         uri: lb://uranusmall-member
         predicates:
+          -
         - Path=/member/**,/sso/**
       - id: uranusmall-coupons
         uri: lb://uranusmall-coupons
